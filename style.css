@@ -1,0 +1,120 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo e fundo */
+body {
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e navegação */
+header {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #00f5ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff00ff;
+}
+
+/* Seções */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.intro {
+    background-color: #0a0a0a;
+    border-bottom: 2px solid #00f5ff;
+}
+
+section:nth-of-type(odd) {
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #00f5ff;
+}
+
+section:nth-of-type(even) {
+    background-color: #121212;
+    border-bottom: 2px solid #00f5ff;
+}
+
+/* Títulos e textos */
+section h2 {
+    color: #00f5ff;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #dcdcdc;
+}
+
+/* Imagens */
+section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* Adicionando animação */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+h1 {
+    animation: pulse 2s infinite;
+}
+
+/* Efeitos e interatividade */
+section {
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+footer p {
+    color: #bbb;
+}
